@@ -130,9 +130,19 @@ export declare class ChatModel extends ModelChatBase {
   canPin(): boolean;
   canArchive(): boolean;
   sendDismissChangeNumber(): any;
-  setComposeContents(e?: any): any;
+  setComposeContents(data: {
+    ctwaContext?: any;
+    ctwaContextLinkData?: any;
+    omittedURL?: any;
+    text: string;
+  }): any;
   getSessionPersistedComposeContents(): any;
-  getComposeContents(): any;
+  getComposeContents(): {
+    ctwaContext: any;
+    ctwaContextLinkData: any;
+    omittedURL: any;
+    text: string;
+  };
   setAttachMediaContents(e?: any): any;
   preload(): any;
   onEmptyMRM(): any;

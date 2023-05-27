@@ -19,6 +19,7 @@ export { canMarkPlayed } from './canMarkPlayed';
 export { canMute } from './canMute';
 export { canReply } from './canReply';
 export { clear } from './clear';
+export { composeContents } from './composeContents';
 export { delete } from './delete';
 export { deleteMessage, DeleteMessageReturn } from './deleteMessage';
 export { downloadMedia } from './downloadMedia';
